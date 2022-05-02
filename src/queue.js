@@ -18,7 +18,7 @@ class ListNode {
  * queue.dequeue(); // returns the top element from queue and deletes it, returns 1
  * queue.getUnderlyingList() // returns { value: 3, next: null }
  */
-module.exports = class Queue {
+class Queue {
 
   constructor() {
     this.head = null;
@@ -56,5 +56,8 @@ module.exports = class Queue {
     this.length--;
     return current.value;
   }
-
 }
+
+module.exports = {
+  Queue
+};

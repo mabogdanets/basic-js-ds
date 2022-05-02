@@ -12,11 +12,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * stack.pop(); // undefined
  *
  */
- module.exports = class Stack {
-  constructor() {
-    this.array = [];
-  }
- 
+class Stack {
   push(element) {
     this.array.push(element);
   }
@@ -29,3 +25,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     return this.array[this.array.length-1];
   }
 }
+
+module.exports = {
+  Stack
+};

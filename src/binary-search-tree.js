@@ -12,10 +12,7 @@ class Node {
 * Implement simple binary search tree according to task description
 * using Node from extensions
 */
-module.exports = class BinarySearchTree {
-  constructor() {
-    this.root = null;
-  }
+class BinarySearchTree {
 
   root() {
    return this.root;
@@ -141,5 +138,8 @@ module.exports = class BinarySearchTree {
 
     return node.value;
   }
-
 }
+
+module.exports = {
+  BinarySearchTree
+};
