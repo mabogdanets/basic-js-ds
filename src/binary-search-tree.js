@@ -15,15 +15,15 @@ class Node {
 class BinarySearchTree {
   
   constructor() {
-    this.root = null;
+    this.rootNode = null;
   }
 
   root() {
-   return this.root;
+   return this.rootNode;
   }
 
   add(value) {
-    this.root = addWithin(this.root, value);
+    this.rootNode = addWithin(this.rootNode, value);
 
     function addWithin(node, value) {
       if (!node) {
@@ -46,7 +46,7 @@ class BinarySearchTree {
   }
 
   has(value) {
-    return searchWithin(this.root, value);
+    return searchWithin(this.rootNode, value);
 
     function searchWithin(node, value) {
       if (!node) {
@@ -69,7 +69,7 @@ class BinarySearchTree {
   }
 
   remove(value) {
-    this.root = removeNode(this.root, value);
+    this.rootNode = removeNode(this.rootNode, value);
 
     function removeNode(node, value) {
       if (!node) {
@@ -118,11 +118,11 @@ class BinarySearchTree {
   }
 
   min() {
-    if (!this.root) {
+    if (!this.rootNode) {
       return;
     }
 
-    let node = this.root;
+    let node = this.rootNode;
     while (node.left) {
       node = node.left;
     }
@@ -131,11 +131,11 @@ class BinarySearchTree {
   }
 
   max() {
-    if (!this.root) {
+    if (!this.rootNode) {
       return;
     }
 
-    let node = this.root;
+    let node = this.rootNode;
     while (node.right) {
       node = node.right;
     }
