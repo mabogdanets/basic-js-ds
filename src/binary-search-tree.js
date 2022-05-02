@@ -13,6 +13,10 @@ class Node {
 * using Node from extensions
 */
 class BinarySearchTree {
+  
+  constructor() {
+    this.root = null;
+  }
 
   root() {
    return this.root;
